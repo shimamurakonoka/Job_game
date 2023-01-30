@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../static/css/style.css">
+    <title>管理者トップページ</title>
+    </head>
+    
+<body class="ad">
+    <!-- ここから -->
+    <div class="c_whitebox">
+    <h1>みんなのらくらく就活RPG -管理者- </h1>
+
+    <a class="inbooox3" href="{{ url_for('reg_quiz_page') }}">&emsp;問題登録&emsp;</a>
+    
+    <a class="inbooox3" href="{{ url_for('user_management_page') }}">アカウント管理</a>
+    
+    <a class="inbooox3" href="{{ url_for('quiz_list') }}">&emsp;問題管理&emsp;</a>
+
+    <a class="inbooox3" href="{{ url_for('thrboard_edit') }}">&emsp;掲示板管理</a>
+    
+    <a class="inbooox3" href="{{ url_for('ad_logout') }}">ログアウト&emsp;</a>
+    </div>
+    <!-- ここまで -->
+</body>
+</html>

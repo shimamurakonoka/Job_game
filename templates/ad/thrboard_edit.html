@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../static/css/style.css">
+    <title>掲示板管理</title>
+    </head>
+<body class="ad">
+    <div class="c_whitebox">
+    <h1>掲示板管理</h1>
+    <br><br>
+    <a href="{{ url_for('thread_edit_page') }}" class="inbooox2">スレッド管理</a><br><br><br>
+    <a href="{{ url_for('board_edit_page') }}" class="inbooox2">コメント管理</a><br><br><br>
+    <a class="na" a href="{{ url_for('adtop') }}">戻る</a>
+</div>
+    <style>
+        h1{ text-align: center;}
+    </style>
+</body>
+</html>

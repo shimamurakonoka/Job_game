@@ -1,0 +1,1784 @@
+/* エラーの色を変える */
+.error{
+    color: red;
+}
+
+.start{
+    /*相対パスで画像ファイルを指定*/
+    background-image: url(../images/start.png);  
+    font-family:"BIZ UDPGothic";
+    position: relative;
+    width: 100%;
+    min-height: 100%;
+    overflow-x: hidden;
+    background-repeat:no-repeat;
+    background-size: cover; /*スクロールバー非表示*/
+}
+
+.user{
+    /*相対パスで画像ファイルを指定*/
+    background-image: url(../images/bg_natural_sougen.jpg);  
+    font-family:"BIZ UDPGothic";
+    width: 100%;
+    min-height: 100%;
+    overflow-x: hidden;
+    background-repeat:no-repeat;
+    background-size: cover; /*スクロールバー非表示*/
+}
+
+.ad{
+    /*相対パスで画像ファイルを指定*/
+    background-image: url(../images/ad.png);
+    font-family:"BIZ UDPGothic";
+    background-repeat:no-repeat;
+    background-size: cover; /*スクロールバー非表示*/
+}
+
+.stage{
+    /*相対パスで画像ファイルを指定*/
+    background-image: url(../images/stage_story.png);
+    font-family:"BIZ UDPGothic";
+    background-repeat:no-repeat;
+    background-size: cover; /*スクロールバー非表示*/
+}
+
+.userlogin{
+    background-image: url(../images/u_log_背景.png);
+    font-family:"BIZ UDPGothic";
+    position: relative;
+    width: 100%;
+    min-height: 100%;
+    overflow-x: hidden;
+    background-repeat:no-repeat;
+    background-size: cover; /*スクロールバー非表示*/
+}
+
+.mainhaikei{
+    background-image: url(../images/main_quiz_背景.png);
+    font-family:"BIZ UDPGothic";
+    width: 100%;
+    min-height: 100%;
+    overflow-x: hidden;
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+
+.keijiban{
+    /*相対パスで画像ファイルを指定*/
+    background-image: url(../images/keijiban.png);  
+    font-family:"BIZ UDPGothic";
+    min-height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    background-size: cover; /*スクロールバー非表示*/
+}
+
+.right{
+    /*相対パスで画像ファイルを指定*/
+    background-image: url(../images/miniok.png);
+    font-family:"BIZ UDPGothic";
+    background-repeat:no-repeat;
+    background-size: cover; /*スクロールバー非表示*/
+}
+
+.minikekka{
+    /*相対パスで画像ファイルを指定*/
+    background-image: url(../images/minikekka.png);
+    font-family:"BIZ UDPGothic";
+    background-repeat:no-repeat;
+    background-size: cover; /*スクロールバー非表示*/
+}
+
+.cashclear{
+    /*相対パスで画像ファイルを指定*/
+    background-image: url(../images/cashclear.png);
+    font-family:"BIZ UDPGothic";
+    background-repeat:no-repeat;
+    background-size: cover; /*スクロールバー非表示*/
+}
+
+.minierr{
+    /*相対パスで画像ファイルを指定*/
+    background-image: url(../images/minierr.png);
+    font-family:"BIZ UDPGothic";
+    background-repeat:no-repeat;
+    background-size: cover; /*スクロールバー非表示*/
+}
+
+/* -------テキストボックスの灰色 ad_log.html------- */
+.textbox_adlog{
+    border: 2px solid #696969;  /* 枠線 */
+    border-radius: 0.67em;   /* 角丸 */
+    padding: 0.3em;          /* 内側の余白量 */
+    background-color: #f5f5f5;  /* 背景色 */
+    width: 20em;             /* 横幅 */
+    height: 30px;           /* 高さ */
+    font-size: 15px;          /* 文字サイズ */
+    line-height: 1.2;        /* 行の高さ */
+    margin-bottom: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+/* -------テキストボックスの灰色 u_log.html------- */
+.textbox_ulog{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    border: 2px solid #696969;  /* 枠線 */
+    border-radius: 0.67em;   /* 角丸 */
+    padding: 0.3em;          /* 内側の余白量 */
+    background-color: #f5f5f5;  /* 背景色 */
+    width: 20em;             /* 横幅 */
+    height: 30px;           /* 高さ */
+    font-size: 15px;          /* 文字サイズ */
+    line-height: 1.2;        /* 行の高さ */
+}
+
+/* ---------------中心に白背景------------- */
+.c_whitebox{
+    /* サイズ指定 */
+    width: 80%;
+    height: 80%;
+    
+    background-color: rgba(255, 255, 255, 0.5);
+    /* 要素の位置指定 */
+    /* text-align: center; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 15px;
+    border-radius: 10px; /* ボックスの四つ角を丸くする */
+    border: 2px  rgba(255, 255, 255, 0.5); /* 境界線を実線で指定 */
+}
+    
+/* ---------------右側に白背景 u_log.html------------- */
+.r_whitebox{
+    /* サイズ指定 */
+    width: 40%;
+    height: 300px;
+    margin-left: auto;
+    margin-top: 15%;
+    margin-right: 2%;
+    background-color: rgba(255, 255, 255, 0.5);
+    /* 要素の中身の位置指定 */
+    line-height: 10px;
+    border-radius: 20px; /* ボックスの四つ角を丸くする */
+    border: 2px rgba(255, 255, 255, 0.5); /* 境界線を実線で指定 */
+}
+    
+/* ---------------左側に白背景------------- */
+.L_whitebox{
+    /* サイズ指定 */
+    width: 45%;
+    height: 700px;
+    margin-left: 10%;
+    margin-top: 60px;
+    margin-right: auto;
+    background-color: rgba(255, 255, 255, 0.5);
+    /* 要素の中身の位置指定 */
+    text-align: center;
+    line-height: 15px;
+    border-radius: 10px; /* ボックスの四つ角を丸くする */
+    border: 2px solid #d5e2eb; /* 境界線を実線で指定 */
+}
+
+/* ----------要素内にさらに白い枠を入れる------------- */
+.inbox{
+    /* サイズ指定 */
+    padding: 5px 20px; /* 内側の余白設定 */
+    border-radius: 12px; /* 要素の角を丸くする */
+    width: auto;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.628);
+    color: rgb(0, 0, 0); /* 文字色 */
+    text-decoration: none; /* aタグの下線を非表示に */
+    /* 要素の中身の位置指定 */
+    text-align: center;
+    /* 縦の文字幅 */
+    line-height: 15px;
+    border: 2px solid #000000; /* 境界線を実線で指定 */
+    margin-bottom: 20px;
+}
+
+/* findworktopのサイズ指定 */
+.dnbox{
+    /* サイズ指定 */
+    padding: 20px 350px; /* 内側の余白設定 */
+    border-radius: 12px; /* 要素の角を丸くする */
+    width: auto;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.628);
+    color: rgb(0, 0, 0); /* 文字色 */
+    text-decoration: none; /* aタグの下線を非表示に */
+    /* 要素の中身の位置指定 */
+    text-align: center;
+    /* 縦の文字幅 */
+    line-height: 15px;
+    border: 2px solid #000000; /* 境界線を実線で指定 */
+    margin-bottom: 20px;
+}
+
+/* 筆記試験 */
+.gnbox{
+    /* サイズ指定 */
+    padding: 20px 340px; /* 内側の余白設定 */
+    border-radius: 12px; /* 要素の角を丸くする */
+    width: auto;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.628);
+    color: rgb(0, 0, 0); /* 文字色 */
+    text-decoration: none; /* aタグの下線を非表示に */
+    /* 要素の中身の位置指定 */
+    text-align: center;
+    /* 縦の文字幅 */
+    line-height: 15px;
+    border: 2px solid #000000; /* 境界線を実線で指定 */
+    margin-bottom: 20px;
+}
+
+/* 復讐のところ*/
+.fnbox{ 
+    /* サイズ指定 */
+    padding: 20px 370px; /* 内側の余白設定 */
+    border-radius: 12px; /* 要素の角を丸くする */
+    width: auto;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.628);
+    color: rgb(0, 0, 0); /* 文字色 */
+    text-decoration: none; /* aタグの下線を非表示に */
+    /* 要素の中身の位置指定 */
+    text-align: center;
+    /* 縦の文字幅 */
+    line-height: 15px;
+    border: 2px solid #000000; /* 境界線を実線で指定 */
+    margin-bottom: 20px;
+}
+
+/* ユーザー名を右上に表示 */
+.tagu{
+    text-align: right;
+    font-size: 10px;
+}
+
+/* 赤ボタン */
+.Bred {
+    padding: 5px 20px; /* 内側の余白設定 */
+    border-radius: 12px; /* 要素の角を丸くする */
+    background-color: rgba(255, 0, 0, 0.5); /* 背景色指定 */
+    border: 2px solid red; /* 境界線を実線で指定 */
+    text-decoration: none; /* aタグの下線を非表示に */
+    color: #fff; /* 文字色 */
+    font-size: 15px; /* フォントサイズ */
+    width: auto;
+    height: auto;
+}
+
+/* 青ボタン */
+.Bbule {
+    padding: 5px 20px; /* 内側の余白設定 */
+    border-radius: 12px; /* 要素の角を丸くする */
+    background-color: rgba(0, 47, 255, 0.5); /* 背景色指定 */
+    border: 2px solid blue; /* 境界線を実線で指定 */
+    text-decoration: none; /* aタグの下線を非表示に */
+    color: #fff; /* 文字色 */
+    font-size: 15px; /* フォントサイズ */
+    width: 100px;
+    height: auto;
+}
+
+/* ストーリーの白枠 */
+#display {
+    width: 700px;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.5);
+    /* 水平方向の中央揃え */
+    margin: 0 auto;
+    margin-left: 240px;
+    text-align: left;
+    position: absolute;
+    bottom: 30px;
+    border-radius: 10px; /* ボックスの四つ角を丸くする */
+    border: 2px solid #d5e2eb; /* 境界線を実線で指定 */
+    }
+
+/* 白枠の中の文字 */
+#name{
+font-weight:bold;
+}
+
+/*--------------------------- 新規登録と何から始めよう ---------------------------*/
+.ulogbttn{
+    margin-top: 50px;
+}
+
+/* ------青ボタン 新規登録-------------- */
+.Bbule_ulog {
+    padding: 10px 20px; /* 内側の余白設定 */
+    border-radius: 12px; /* 要素の角を丸くする */
+    background-color: rgba(0, 47, 255, 0.5); /* 背景色指定 */
+    border: 2px solid blue; /* 境界線を実線で指定 */
+    text-decoration: none; /* aタグの下線を非表示に */
+    color: #fff; /* 文字色 */
+    font-size: 15px; /* フォントサイズ */
+    width: 100px;
+    height: auto;
+    position: absolute;
+    margin-left: 60px;
+}
+
+/*--------------------------- u_logの何から始めようボタン ---------------------------*/
+.tiikawa {
+    padding: 10px 20px; /* 内側の余白設定 */
+    border-radius: 12px; /* 要素の角を丸くする */
+    background-color: rgba(247, 114, 6, 0.5); /* 背景色指定 */
+    border: 2px solid orange; /* 境界線を実線で指定 */
+    text-decoration: none; /* aタグの下線を非表示に */
+    color: #fff; /* 文字色 */
+    font-size: 14px; /* フォントサイズ */
+    width: 130px;
+    height: auto;
+    position: absolute;
+    right: 300px;
+    
+}
+
+/*-------------- u_logの管理者ボタン --------------------*/
+.rinngo {
+    padding: 10px 20px; /* 内側の余白設定 */
+    border-radius: 12px; /* 要素の角を丸くする */
+    background-color: rgba(0, 0, 0, 0.5); /* 背景色指定 */
+    border: 2px solid black; /* 境界線を実線で指定 */
+    text-decoration: none; /* aタグの下線を非表示に */
+    color: #fff; /* 文字色 */
+    font-size: 15px; /* フォントサイズ */
+    width: 100px;
+    position: absolute;/* こっから位置指定できるやつ */
+    bottom:-80px;
+    left:20px;
+}
+
+/* ------ピンクボタン------------ */
+.Bpink {
+    padding: 5px 20px; /* 内側の余白設定 */
+    border-radius: 12px; /* 要素の角を丸くする */
+    background-color: rgba(255, 192, 203, 0.526); /* 背景色指定 */
+    border: 2px solid pink; /* 境界線を実線で指定 */
+    text-decoration: none; /* aタグの下線を非表示に */
+    color: rgb(255, 255, 255); /* 文字色 */
+    font-size: 15px; /* フォントサイズ */
+    width: auto;
+    height: auto;
+    position: absolute;
+    margin-left: 780px;
+    top: 470px;
+}
+
+/*----------------- adtopのボタン1 ------------------*/
+.hatimitu1{
+    /* サイズ指定 */
+    padding: 60px 60px; /* 内側の余白設定 */
+    border-radius: 12px; /* 要素の角を丸くする */
+    width: auto;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.628);
+    color: rgb(0, 0, 0); /* 文字色 */
+    text-decoration: none; /* aタグの下線を非表示に */
+    /* 要素の中身の位置指定 */
+    text-align: center;
+    /* 縦の文字幅 */
+    line-height: 30px;
+    font-size: 30px; /* フォントサイズ */
+    border: 2px solid #000000; /* 境界線を実線で指定 */
+    margin-bottom: 40px;
+    position: absolute;
+    bottom:120px;
+    left:50px;
+}
+
+/* ------------------ adtopのボタン2 ---------------- */
+.hatimitu2{
+    /* サイズ指定 */
+    padding: 60px 60px; /* 内側の余白設定 */
+    border-radius: 12px; /* 要素の角を丸くする */
+    width: auto;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.628);
+    color: rgb(0, 0, 0); /* 文字色 */
+    text-decoration: none; /* aタグの下線を非表示に */
+    /* 要素の中身の位置指定 */
+    text-align: center;
+    /* 縦の文字幅 */
+    line-height: 30px;
+    font-size: 30px; /* フォントサイズ */
+    border: 2px solid #000000; /* 境界線を実線で指定 */
+    margin-bottom: 40px;
+    position: absolute;
+    bottom:120px;
+    left:340px;
+}
+
+/*--------------------- adtopのボタン3 -------------------------*/
+.hatimitu3{
+    /* サイズ指定 */
+    padding: 60px 60px; /* 内側の余白設定 */
+    border-radius: 12px; /* 要素の角を丸くする */
+    width: auto;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.628);
+    color: rgb(0, 0, 0); /* 文字色 */
+    text-decoration: none; /* aタグの下線を非表示に */
+    /* 要素の中身の位置指定 */
+    text-align: center;
+    /* 縦の文字幅 */
+    line-height: 30px;
+    font-size: 30px; /* フォントサイズ */
+    border: 2px solid #000000; /* 境界線を実線で指定 */
+    margin-bottom: 40px;
+    position: absolute;
+    bottom:120px;
+    left:700px;
+}
+
+/*---------------- adtopのボタンとu_registerとu_regcomの戻る ------------------*/
+.na{
+    /* サイズ指定 */
+    padding: 10px 20px; /* 内側の余白設定 */
+    border-radius: 12px; /* 要素の角を丸くする */
+    background-color: rgba(0, 47, 255, 0.5); /* 背景色指定 */
+    border: 2px solid blue; /* 境界線を実線で指定 */
+    text-decoration: none; /* aタグの下線を非表示に */
+    color: #fff; /* 文字色 */
+    font-size: 20px; /* フォントサイズ */
+    width: 100px; /* aタグの下線を非表示に */
+    /* 要素の中身の位置指定 */
+    text-align: center;
+    /* 縦の文字幅 */
+    line-height: 15px;
+    margin-bottom: 20px;
+    position: absolute;
+    bottom:10px;
+    left:20px;
+}
+
+.na2{
+    /* サイズ指定 */
+    padding: 10px 20px; /* 内側の余白設定 */
+    border-radius: 12px; /* 要素の角を丸くする */
+    background-color: rgba(0, 47, 255, 0.5); /* 背景色指定 */
+    border: 2px solid blue; /* 境界線を実線で指定 */
+    text-decoration: none; /* aタグの下線を非表示に */
+    color: #fff; /* 文字色 */
+    font-size: 20px; /* フォントサイズ */
+    width: 100px; /* aタグの下線を非表示に */
+    /* 要素の中身の位置指定 */
+    text-align: center;
+    /* 縦の文字幅 */
+    line-height: 15px;
+    margin-bottom: 20px;
+    position: absolute;
+    margin-top: -15px;
+    left:20px;
+}
+
+/*------------------- adtopのタイトル --------------------*/
+.title{
+    font-size: 45px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+/*------------- uregisterのボタン2 -----------------*/
+.nana{
+    /* サイズ指定 */
+    padding: 10px 20px; /* 内側の余白設定 */
+    border-radius: 12px; /* 要素の角を丸くする */
+    background-color: rgba(255, 0, 0, 0.5); /* 背景色指定 */
+    border: 2px solid red; /* 境界線を実線で指定 */
+    text-decoration: none; /* aタグの下線を非表示に */
+    color: #fff; /* 文字色 */
+    /* 要素の中身の位置指定 */
+    text-align: center;
+    width: 100px;
+    /* 縦の文字幅 */
+    font-size: 20px; /* フォントサイズ */
+    line-height: 15px;
+    margin-bottom: 20px;
+    position: absolute;
+    bottom:10px;
+    left:880px;
+}
+
+/*-------------------- uregisterの入力欄 ------------------*/
+.textbox_ureg{
+    margin-left: 350px;
+    margin-top: 40px;
+    border: 2px solid #696969;  /* 枠線 */
+    border-radius: 0.67em;   /* 角丸 */
+    padding: 0.3em;          /* 内側の余白量 */
+    background-color: #f5f5f5;  /* 背景色 */
+    width: 20em;             /* 横幅 */
+    height: 30px;           /* 高さ */
+    font-size: 15px;          /* 文字サイズ */
+    line-height: 2.3;        /* 行の高さ */
+}
+
+/*----------------- reviewとu_regcomの戻る -------------------*/
+.pa{
+    /* サイズ指定 */
+    padding: 10px 20px; /* 内側の余白設定 */
+    border-radius: 12px; /* 要素の角を丸くする */
+    background-color: rgba(0, 47, 255, 0.5); /* 背景色指定 */
+    border: 2px solid blue; /* 境界線を実線で指定 */
+    text-decoration: none; /* aタグの下線を非表示に */
+    color: #fff; /* 文字色 */
+    font-size: 20px; /* フォントサイズ */
+    width: 100px; /* aタグの下線を非表示に */
+    /* 要素の中身の位置指定 */
+    text-align: center;
+    /* 縦の文字幅 */
+    line-height: 15px;
+    margin-bottom: 20px;
+    position: absolute;
+    bottom: 60px;
+    left: 150px;
+}
+
+/*------------------- u_registercomの確認ボタン ------------------*/
+.pa2{
+    /* サイズ指定 */
+    padding: 10px 20px; /* 内側の余白設定 */
+    border-radius: 12px; /* 要素の角を丸くする */
+    background-color: rgba(255, 0, 0, 0.5); /* 背景色指定 */
+    border: 2px solid red; /* 境界線を実線で指定 */
+    text-decoration: none; /* aタグの下線を非表示に */
+    color: #fff; /* 文字色 */
+    /* 要素の中身の位置指定 */
+    text-align: center;
+    width: 100px;
+    /* 縦の文字幅 */
+    font-size: 20px; /* フォントサイズ */
+    line-height: 15px;
+    margin-bottom: 20px;
+    position: absolute;
+    bottom:150px;
+    left:460px;
+}
+
+/* ーーーーーーーーーーーーーーーーーーーーーgametop以降のCSSーーーーーーーーーーーーーーーー*/
+/* gametopのinbox */
+.rinboxsss{/* gametopのinbox */
+    /* サイズ指定 */
+    padding: 50px 260px; /* 内側の余白設定 */
+    border-radius: 12px; /* 要素の角を丸くする */
+    width: auto;
+    height: auto;
+    background-color: rgba(235, 19, 19, 0.628);
+    color: rgb(0, 0, 0); /* 文字色 */
+    text-decoration: none; /* aタグの下線を非表示に */
+    /* 要素の中身の位置指定 */
+    text-align: center;
+    /* 縦の文字幅 */
+    font-size: 30px; /* フォントサイズ */
+    line-height: 70px;
+    border: 2px solid #000000; /* 境界線を実線で指定 */
+    margin-bottom: 20px;
+    margin-left: 150px;
+}
+
+.inboxsss{/* gametopのinbox */
+    /* サイズ指定 */
+    padding: 20px 260px; /* 内側の余白設定 */
+    border-radius: 12px; /* 要素の角を丸くする */
+    width: auto;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.628);
+    color: rgb(0, 0, 0); /* 文字色 */
+    text-decoration: none; /* aタグの下線を非表示に */
+    /* 要素の中身の位置指定 */
+    text-align: center;
+    /* 縦の文字幅 */
+    font-size: 30px; /* フォントサイズ */
+    line-height: 40px;
+    border: 2px solid #000000; /* 境界線を実線で指定 */
+    margin-bottom: 20px;
+    margin-left: 150px;
+}
+
+/* gametopのプロフィールボタンの位置 */
+.pro2{
+    /* サイズ指定 */
+    padding: 15px 10px; /* 内側の余白設定 */
+    border-radius: 12px; /* 要素の角を丸くする */
+    background-color: rgba(255, 255, 255, 0.5); /* 背景色指定 */
+    border: 2px solid rgb(255, 255, 255); /* 境界線を実線で指定 */
+    text-decoration: none; /* aタグの下線を非表示に */
+    color: black; /* 文字色 */
+    font-size: 15px; /* フォントサイズ */
+    width: 100px; /* aタグの下線を非表示に */
+    /* 要素の中身の位置指定 */
+    text-align: center;
+    /* 縦の文字幅 */
+    line-height: 15px;
+    margin-bottom: 15px;
+    position: absolute; 
+    top: 10px; 
+    left: 830px;
+    border: 2px solid #000000; /* 境界線を実線で指定 */
+    background-image: url(../images/gametopのプロフィール.png);
+}
+
+/* -----------------------------------findworktopのcss ----------------------------------------*/
+.inbooox{
+    /* サイズ指定 */
+    padding: 15px 160px; /* 内側の余白設定 */
+    border-radius: 12px; /* 要素の角を丸くする */
+    width: auto;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.628);
+    color: rgb(0, 0, 0); /* 文字色 */
+    text-decoration: none; /* aタグの下線を非表示に */
+    /* 要素の中身の位置指定 */
+    text-align: center;
+    /* 縦の文字幅 */
+    font-size: 20px; /* フォントサイズ */
+    line-height: 40px;
+    border: 2px solid #000000; /* 境界線を実線で指定 */
+    margin-bottom: 20px;
+    margin-left: 380px;
+}
+
+/* ----------------------------------account_managementのhtml------------------------------------------*/
+.ta{
+    margin-top: 30px;
+    position: absolute;
+    left:310px;
+}
+
+/* ----------------------------------acc_edit_comのhtml------------------------------------------*/
+.acc{
+    margin-top: 15px;
+    position: absolute;
+    right:50px;
+    top:100px;
+    left: 550px;
+}
+
+.mo{
+    margin-top: 20px;
+    font-size: 16px;
+    position: absolute;
+    top:100px;
+    left: 240px;
+}
+
+/* ----------------------------------acc_delete_comのcss------------------------------------------*/
+.ta2{
+    margin-top: 30px;
+    position: absolute;
+    top:180px;
+    left: 360px;
+}
+
+/* ----------------------------------u_regi_comのcss------------------------------------------*/
+.mozi3{/*u_regi_comの文字の位置*/
+    width: auto;
+    height: auto;
+    color: rgb(0, 0, 0); /* 文字色 */
+    text-decoration: none; /* aタグの下線を非表示に */
+    /* 要素の中身の位置指定 */
+    text-align: left;
+    /* 縦の文字幅 */
+    font-size: 15px; /* フォントサイズ */
+    line-height: 40px;
+    margin-top: 10px;
+    margin-left: 340px;
+}
+
+.pa3{/* u_regi_comの確認ボタン */
+    /* サイズ指定 */
+    padding: 10px 20px; /* 内側の余白設定 */
+    border-radius: 12px; /* 要素の角を丸くする */
+    background-color: rgba(255, 0, 0, 0.5); /* 背景色指定 */
+    border: 2px solid red; /* 境界線を実線で指定 */
+    text-decoration: none; /* aタグの下線を非表示に */
+    color: #fff; /* 文字色 */
+    /* 要素の中身の位置指定 */
+    text-align: center;
+    width: 100px;
+    /* 縦の文字幅 */
+    font-size: 20px; /* フォントサイズ */
+    line-height: 15px;
+    margin-bottom: 20px;
+    position: absolute;
+    bottom:100px;
+    left:460px;
+}
+
+/* ------------------------------------test-------------------------------------------------*/
+.te{/* gametopのinbox */
+    /* サイズ指定 */
+    padding: 45px 30px; /* 内側の余白設定 */
+    border-radius: 12px; /* 要素の角を丸くする */
+    width: auto;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.628);
+    color: rgb(0, 0, 0); /* 文字色 */
+    text-decoration: none; /* aタグの下線を非表示に */
+    /* 要素の中身の位置指定 */
+    text-align: center;
+    /* 縦の文字幅 */
+    font-size: 30px; /* フォントサイズ */
+    line-height: 200px;
+    border: 2px solid #000000; /* 境界線を実線で指定 */
+    margin-bottom: 150px;
+    margin-right: 60px;
+}
+
+.a{
+    font-size: 20px; /* フォントサイズ */
+    line-height: 45px;
+}
+
+/* ------------------------------ad_quiz_regのcss---------------------------------------------------------- */
+.n1{/* 登録 */
+    /* サイズ指定 */
+    padding: 10px 10px; /* 内側の余白設定 */
+    border-radius: 12px; /* 要素の角を丸くする */
+    background-color: rgba(255, 0, 0, 0.5); /* 背景色指定 */
+    border: 2px solid red; /* 境界線を実線で指定 */
+    text-decoration: none; /* aタグの下線を非表示に */
+    color: #fff; /* 文字色 */
+    /* 要素の中身の位置指定 */
+    text-align: center;
+    width: 100px;
+    /* 縦の文字幅 */
+    font-size: 20px; /* フォントサイズ */
+    line-height: 15px;
+    margin-bottom: 20px;
+    position: absolute;
+    bottom:10px;
+    left:880px;
+}
+
+.tam{/* 問題作成ってタイトル 　％*/
+    font-size: 40px;
+    margin-top: 30px;
+    position: absolute;
+    left:440px;
+}
+
+.genre{/*ジャンル選ぶとこの % */
+    font-size: 20px;
+    margin-top: 140px;
+    position: absolute;
+    left:60px;
+}
+
+.quiz{/* 問題選ぶとこの %*/
+    font-size: 20px;
+    margin-top: 200px;
+    position: absolute;
+    left:20px;
+}
+
+.level-ed{/* 難易度選ぶとこの 文字*/
+    font-size: 20px;
+    margin-top: 130px;
+    position: absolute;
+    left:720px;
+}
+
+.right-ed{/* 正解選ぶとこの 文字%*/
+    font-size: 20px;
+    margin-top: 280px;
+    position: absolute;
+    left:60px;
+}
+
+.importance-ed{/* 重要度　文字 */
+    font-size: 20px;
+    margin-top: 240px;
+    position: absolute;
+    left:720px;
+}
+
+.commentary-ed{/* 解説選ぶとこの  %*/
+    font-size: 15px;
+    margin-top: -410px;
+    position: absolute;
+    left:280px;
+}
+
+.attention-qued{/* 記入漏れ %*/
+    font-size: 20px;
+    margin-top: 300px;
+    position: absolute;
+    left:340px;
+    color: rgb(255, 2, 2); /* 文字色 */
+}
+
+/* 難易度選ぶとこのボックス  %*/
+.k{
+    /* サイズ指定 */
+    padding: 15px 70px; /* 内側の余白設定 */
+    border-radius: 12px; /* 要素の角を丸くする */
+    width: auto;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.628);
+    color: rgb(0, 0, 0); /* 文字色 */
+    text-decoration: none; /* aタグの下線を非表示に */
+    border: dashed 1px #000000;
+    /* 要素の中身の位置指定 */
+    text-align: center;
+    /* 縦の文字幅 */
+    font-size: 20px; /* フォントサイズ */
+    line-height: 80px;
+    margin-bottom: 20px;
+    margin-left: -40px;
+}
+
+/* seikai選択のボックス %*/
+.f{
+    /* サイズ指定 */
+    padding: 15px 60px; /* 内側の余白設定 */
+    border-radius: 12px; /* 要素の角を丸くする */
+    width: auto;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.628);
+    color: rgb(0, 0, 0); /* 文字色 */
+    text-decoration: none; /* aタグの下線を非表示に */
+    border: dashed 1px #000000;
+    /* 要素の中身の位置指定 */
+    text-align: center;
+    /* 縦の文字幅 */
+    font-size: 20px; /* フォントサイズ */
+    line-height: 70px;
+    margin-bottom: 20px;
+    margin-left: 0px;
+}
+
+/* 重要度のボックス % */
+.c{
+    /* サイズ指定 */
+    padding: 15px 30px; /* 内側の余白設定 */
+    border-radius: 12px; /* 要素の角を丸くする */
+    width: auto;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.628);
+    color: rgb(0, 0, 0); /* 文字色 */
+    text-decoration: none; /* aタグの下線を非表示に */
+    border: dashed 1px #000000;
+    /* 要素の中身の位置指定 */
+    text-align: center;
+    /* 縦の文字幅 */
+    font-size: 20px; /* フォントサイズ */
+    line-height: 600px;
+    margin-bottom: 20px;
+    margin-left: 680px;
+}
+
+/* ----------------------------myprofileのhtml-------------------------------------------------*/
+.nanana{/* myprofileのボタン */
+    /* サイズ指定 */
+    padding: 10px 10px; /* 内側の余白設定 */
+    border-radius: 12px; /* 要素の角を丸くする */
+    background-color: rgba(255, 0, 0, 0.5); /* 背景色指定 */
+    border: 2px solid red; /* 境界線を実線で指定 */
+    text-decoration: none; /* aタグの下線を非表示に */
+    color: #fff; /* 文字色 */
+    /* 要素の中身の位置指定 */
+    text-align: center;
+    width: 100px;
+    /* 縦の文字幅 */
+    font-size: 20px; /* フォントサイズ */
+    line-height: 15px;
+    margin-bottom: 20px;
+    position: absolute;
+    bottom:10px;
+    left:880px;
+}
+
+.mozi{/*myprofile文字の位置*/
+    width: auto;
+    height: auto;
+    color: rgb(0, 0, 0); /* 文字色 */
+    text-decoration: none; /* aタグの下線を非表示に */
+    /* 要素の中身の位置指定 */
+    text-align: left;
+    /* 縦の文字幅 */
+    font-size: 30px; /* フォントサイズ */
+    line-height: 40px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+/* -----------------------------------------myprofile_edit_com以降のcss------------------- */
+.mozi2{/*myprofile_edit_com文字の位置*/
+    width: auto;
+    height: auto;
+    color: rgb(0, 0, 0); /* 文字色 */
+    text-decoration: none; /* aタグの下線を非表示に */
+    /* 要素の中身の位置指定 */
+    text-align: left;
+    /* 縦の文字幅 */
+    font-size: 30px; /* フォントサイズ */
+    line-height: 15px;
+    margin-top: 60px;
+    margin-left: 280px;
+}
+
+/* ------------------------------------------- */
+.fa{ /* タイトル */
+    font-size: 40px;
+    margin-top: 60px;
+    position: absolute;
+    left:560px;
+}
+
+.aomori{ /*  */
+    color: rgb(255, 0, 0); /* 文字色 */
+    font-size: 18px;
+    margin-top: 100px;
+    position: absolute;
+    left:400px;
+}
+
+.ra{
+    font-size: 20px;
+    margin-top: 310px;
+    position: absolute;
+    left:370px;
+}
+
+.age{
+    font-size: 20px;
+    margin-top: 310px;
+    position: absolute;
+    left:370px;
+}
+
+.l{
+    padding: 5px 5px; /* 内側の余白設定 */
+    border-radius: 12px; /* 要素の角を丸くする */
+    background-color: rgba(255, 0, 0, 0.5); /* 背景色指定 */
+    border: 2px solid red; /* 境界線を実線で指定 */
+    text-decoration: none; /* aタグの下線を非表示に */
+    color: #fff; /* 文字色 */
+    /* 要素の中身の位置指定 */
+    text-align: center;
+    width: 100px;
+    position: absolute;
+    margin-top: 300px;
+    left:800px;
+}
+
+.sure{  
+    /*相対パスで画像ファイルを指定*/
+    background-image: url(../images/hai_kei_sure.jpeg);  
+    font-family:"BIZ UDPGothic";
+    width: 100%;
+    min-height: 100%;
+    overflow-x: hidden;
+}
+
+.goki{/* reviewとu_regcomの戻る */
+    /* サイズ指定 */
+    padding: 10px 5px; /* 内側の余白設定 */
+    border-radius: 12px; /* 要素の角を丸くする */
+    background-color: rgba(0, 47, 255, 0.5); /* 背景色指定 */
+    border: 2px solid blue; /* 境界線を実線で指定 */
+    text-decoration: none; /* aタグの下線を非表示に */
+    color: #fff; /* 文字色 */
+    font-size: 20px; /* フォントサイズ */
+    width: 100px; /* aタグの下線を非表示に */
+    /* 要素の中身の位置指定 */
+    text-align: center;
+    /* 縦の文字幅 */
+    position: absolute;
+    margin-top:300px;
+    margin-left:20px;  
+}
+
+.bi{
+    text-align: left;
+    margin-top: 20px;
+    margin-left: 400px;
+}
+
+.bu{
+    text-align: left;
+    margin-top: -30px;
+    margin-left: 500px;
+}
+
+.by{
+    text-align: left;
+    margin-top: 10px;
+    margin-left: 450px;
+}
+
+.h{
+    padding: 5px 5px; /* 内側の余白設定 */
+    border-radius: 12px; /* 要素の角を丸くする */
+    background-color: rgba(224, 165, 165, 0.5); /* 背景色指定 */
+    border: 2px solid red; /* 境界線を実線で指定 */
+    text-decoration: none; /* aタグの下線を非表示に */
+    color: #fff; /* 文字色 */
+    /* 要素の中身の位置指定 */
+    margin-left: 800px;
+    margin-top: -70px;
+}
+
+.textbox{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    border: 2px solid #696969;  /* 枠線 */
+    border-radius: 0.67em;   /* 角丸 */
+    padding: 0.3em;          /* 内側の余白量 */
+    background-color: #f5f5f5;  /* 背景色 */
+    width: 20em;             /* 横幅 */
+    height: 30px;           /* 高さ */
+    font-size: 15px;          /* 文字サイズ */
+    line-height: 1.2;        /* 行の高さ */
+}
+
+.thr_info{
+    text-align: left;
+    margin-top: 150px;
+    margin-left: 300px;
+}
+
+
+.ma{
+    font-size: 20px;
+    margin-top: -10px;
+    position: absolute;
+    left:450px;
+}
+
+.ha_{
+    padding: 5px 5px; /* 内側の余白設定 */
+    border-radius: 12px; /* 要素の角を丸くする */
+    background-color: rgba(224, 165, 165, 0.5); /* 背景色指定 */
+    border: 2px solid red; /* 境界線を実線で指定 */
+    text-decoration: none; /* aタグの下線を非表示に */
+    color: #fff; /* 文字色 */
+    /* 要素の中身の位置指定 */
+    margin-left: 730px;
+    margin-top: -30px;
+}
+
+.waku{/* waku*/
+    /* サイズ指定 */
+    padding: 10px 5px; /* 内側の余白設定 */
+    border-radius: 5px; /* 要素の角を丸くする */
+    width: auto;
+    height: auto;
+    background-color: rgb(251, 250, 250);
+    color: rgb(0, 0, 0); /* 文字色 */
+    text-decoration: none; /* aタグの下線を非表示に */
+    border: dashed 1px #000000;
+    /* 要素の中身の位置指定 */
+    text-align: center;
+    /* 縦の文字幅 */
+    font-size: 15px; /* フォントサイズ */
+    line-height: 10px;
+    margin-bottom: 20px;
+    margin-left: 300px;
+}
+
+.sakujyo{
+    padding: 10px 5px;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(255, 0, 0);
+    text-decoration: none;
+    border: dashed 1px #ff0000;
+    text-align: center;
+    font-size: 15px;
+    line-height:5px;
+    position: absolute;
+    margin-top: -50px;
+    margin-bottom: -80px;
+    margin-left: 470px;
+
+}
+
+.roxy2{
+    text-align: left;
+    margin-top: 20px;
+    margin-left: 350px;
+}
+.roxy3{
+    text-align: left;
+    margin-top: 30px;
+    margin-left: 350px;
+}
+
+.fo{ /* タイトル */
+    font-size: 40px;
+    margin-top: 70px;
+    position: absolute;
+    left:400px;
+}
+
+.mamakoko{
+    font-size: 20px;
+    margin-top: 40px;
+    position: absolute;
+    left:370px;
+}
+
+.haburasi{
+   /* サイズ指定 */
+        padding: 10px 10px; /* 内側の余白設定 */
+        border-radius: 12px; /* 要素の角を丸くする */
+        background-color: rgba(255, 0, 0, 0.5); /* 背景色指定 */
+        border: 2px solid red; /* 境界線を実線で指定 */
+        text-decoration: none; /* aタグの下線を非表示に */
+        color: #fff; /* 文字色 */
+        /* 要素の中身の位置指定 */
+        text-align: center;
+        width: 100px;
+        /* 縦の文字幅 */
+        font-size: 20px; /* フォントサイズ */
+        line-height: 15px;
+        margin-bottom: 20px;
+        position: absolute;
+        top:470px;
+        left:880px;
+    }
+
+.inbooox2{
+    /* サイズ指定 */
+    padding: 25px 150px; /* 内側の余白設定 */
+    border-radius: 12px; /* 要素の角を丸くする */
+    width: auto;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.628);
+    color: rgb(0, 0, 0); /* 文字色 */
+    text-decoration: none; /* aタグの下線を非表示に */
+    /* 要素の中身の位置指定 */
+    text-align: center;
+    /* 縦の文字幅 */
+    font-size: 20px; /* フォントサイズ */
+    line-height: 80px;
+    border: 2px solid #000000; /* 境界線を実線で指定 */
+    margin-bottom: -30px;
+    margin-left: 280px;
+}
+
+.my{
+    /* サイズ指定 */
+    padding: 10px 10px; /* 内側の余白設定 */
+    border-radius: 12px; /* 要素の角を丸くする */
+    background-color: rgba(255, 0, 0, 0.5); /* 背景色指定 */
+    border: 2px solid red; /* 境界線を実線で指定 */
+    text-decoration: none; /* aタグの下線を非表示に */
+    color: #fff; /* 文字色 */
+    /* 要素の中身の位置指定 */
+    text-align: center;
+    width: 100px;
+    /* 縦の文字幅 */
+    font-size: 20px; /* フォントサイズ */
+    line-height: 15px;
+    margin-bottom: 70px;
+    position: absolute;
+    bottom:10px;
+    left:740px;
+}
+
+.ggggg{ /* タイトル */
+    font-size: 40px;
+    margin-top: 2px;
+    position: absolute;
+    left:450px;
+}
+
+.fffff{ /* タイトル */
+    font-size: 40px;
+    margin-top: 15px;
+    position: absolute;
+    left:460px
+    }
+
+    .wa{
+        font-size: 20px;
+        margin-top: 50px;
+        position: absolute;
+        left:350px;
+    }
+
+    .haa{
+        font-size: 20px;
+        margin-top: 100px;
+        position: absolute;
+        left:350px;
+    }
+
+    .han{
+        font-size: 20px;
+        margin-top: 150px;
+        position: absolute;
+        left:350px;
+    }
+
+    .tii{/* profileの確認ボタン */
+        /* サイズ指定 */
+        padding: 10px 20px; /* 内側の余白設定 */
+        border-radius: 12px; /* 要素の角を丸くする */
+        background-color: rgba(255, 0, 0, 0.5); /* 背景色指定 */
+        border: 2px solid red; /* 境界線を実線で指定 */
+        text-decoration: none; /* aタグの下線を非表示に */
+        color: #fff; /* 文字色 */
+        /* 要素の中身の位置指定 */
+        text-align: center;
+        width: 100px;
+        /* 縦の文字幅 */
+        font-size: 20px; /* フォントサイズ */
+        line-height: 15px;
+        margin-bottom: 20px;
+        position: absolute;
+        margin-top: 250px;
+        left:460px;
+    }
+    
+    .wa2{
+        font-size: 20px;
+        margin-top: 2px;
+        position: absolute;
+        left:350px;
+    }
+
+    .haa2{
+        font-size: 20px;
+        margin-top: 60px;
+        position: absolute;
+        left:350px;
+    }
+
+    .tii2{/* profileの確認ボタン 2*/
+        /* サイズ指定 */
+        padding: 10px 20px; /* 内側の余白設定 */
+        border-radius: 12px; /* 要素の角を丸くする */
+        background-color: rgba(255, 0, 0, 0.5); /* 背景色指定 */
+        border: 2px solid red; /* 境界線を実線で指定 */
+        text-decoration: none; /* aタグの下線を非表示に */
+        color: #fff; /* 文字色 */
+        /* 要素の中身の位置指定 */
+        text-align: center;
+        width: 100px;
+        /* 縦の文字幅 */
+        font-size: 20px; /* フォントサイズ */
+        line-height: 15px;
+        margin-bottom: 20px;
+        position: absolute;
+        margin-top: 60px;
+        left:460px;
+    }
+
+/* -------------------------------minigame--------------------------------------- */
+/* タイトル */
+.po{
+    text-align: center;
+    font-size: 40px;
+    margin-top: 100px;
+    position: absolute;
+    left:200px;
+}
+
+.minigame_whitebox{/* 問題内容 */
+    /* サイズ指定 */
+    width: 50%;
+    height: 25%;
+    
+    background-color: rgba(255, 255, 255, 0.5);
+    /* 要素の位置指定 */
+    /* text-align: center; */
+    position: absolute;
+    top: 280px;
+    left: 650px;
+    transform: translate(-50%, -50%);
+    line-height: 10px;
+    margin-top: 10px;
+    border-radius: 10px; /* ボックスの四つ角を丸くする */
+    border: 2px  rgba(255, 255, 255, 0.5); /* 境界線を実線で指定 */
+    border: dashed 0.5px #000000;
+}
+
+.minigame_2_whitebox{/* 回答選択 */
+    /* サイズ指定 */
+    width: 30%;
+    height: 10%;
+    
+    background-color: rgba(255, 255, 255, 0.5);
+    /* 要素の位置指定 */
+    /* text-align: center; */
+    position: absolute;
+    top: 150px;
+    left: 520px;
+    transform: translate(-50%, -50%);
+    line-height: 40px;
+    margin-top: 300px;
+    border-radius: 10px; /* ボックスの四つ角を丸くする */
+    border: 2px  rgba(255, 255, 255, 0.5); /* 境界線を実線で指定 */
+    border: dashed 0.5px #000000;
+}
+
+.pi{/* もじ */
+    text-align: center;
+    font-size: 20px;
+    margin-top: 365px;
+    position: absolute;
+    left:340px;
+}
+
+.pg{/* 回答ボタン */
+    text-align: center;
+    font-size: 25px;
+    margin-top: 25px;
+    position: absolute;
+    left:10px;
+    display:flex;
+}
+
+.papan{/* reviewとu_regcomの戻る */
+    /* サイズ指定 */
+    padding: 10px 30px; /* 内側の余白設定 */
+    border-radius: 12px; /* 要素の角を丸くする */
+    background-color: rgba(0, 47, 255, 0.5); /* 背景色指定 */
+    border: 2px solid blue; /* 境界線を実線で指定 */
+    text-decoration: none; /* aタグの下線を非表示に */
+    color: #fff; /* 文字色 */
+    font-size: 12px; /* フォントサイズ */
+    width: 100px; /* aタグの下線を非表示に */
+    /* 要素の中身の位置指定 */
+    text-align: center;
+    /* 縦の文字幅 */
+    line-height: 15px;
+    margin-bottom: 20px;
+    position: absolute;
+    bottom: 60px;
+    left: 150px;
+}
+
+.BBB {
+    padding: 10px 40px; /* 内側の余白設定 */
+    border-radius: 12px; /* 要素の角を丸くする */
+    background-color: rgba(255, 0, 0, 0.5); /* 背景色指定 */
+    border: 2px solid red; /* 境界線を実線で指定 */
+    text-decoration: none; /* aタグの下線を非表示に */
+    color: #fff; /* 文字色 */
+    font-size: 20px; /* フォントサイズ */
+    line-height: -30px;
+    margin-bottom: 20px;
+    position: absolute;
+    bottom: 140px;
+    left: 800px;
+  }
+
+   /* -------------------------------あたらしいｃｓｓ------------------------------------------------ */
+
+.hai{/* 背景 */
+    background-image: url(../images/quiz_背景.png);
+    font-family:"BIZ UDPGothic";
+    width: 90%;
+    min-height: 100px;
+    overflow-x: hidden;
+    background-size: cover;
+}
+
+.banana{/* 回答 */
+    text-align: center;
+    font-size: 25px;
+    margin-top: 25px;
+    position: absolute;
+    left:10px;
+    display:flex;
+}
+
+.mikan{/* 時間 */
+    text-align: center;
+    font-size: 25px;
+    margin-top: -420px;
+    position: absolute;
+    left:1120px;
+    display:flex;
+}
+
+.time{/* タイムリミット */
+    text-align: center;
+    font-size: 25px;
+    margin-top:-420px;
+    position: absolute;
+    left:950px;
+    display:flex;
+}
+
+.meron{/* 問題 */
+    text-align: center;
+    font-size: 25px;
+    margin-top: 25px;
+    position: absolute;
+    left:10px;
+    display:flex;
+}
+
+.sikaku{
+    /* サイズ指定 */
+    width: 600px;
+    height: 350px;
+    margin-left: 10%;
+    margin-top: 90px;
+    margin-right: auto;
+    background-color: rgba(255, 255, 255, 0.5);
+    /* 要素の中身の位置指定 */
+    text-align: center;
+    line-height: 15px;
+    border-radius: 10px; /* ボックスの四つ角を丸くする */
+    border: 2px solid #d5e2eb; /* 境界線を実線で指定 */
+}
+
+/* ----------------------------rankingのhtml-------------------------------------------------*/
+.ba{/* 文字 */
+    text-align: center;
+    font-size: 40px;
+    margin-top: 60px;
+    position: absolute;
+    left:200px;
+}
+
+.da{/* 王冠 */
+    width: 140px;
+    min-height: 120px;
+    overflow-x: hidden;
+    position: absolute;
+    margin-top: 65px;
+    left:970px;
+}
+
+.di{
+    width: 100px;
+    min-height: 100px;
+    overflow-x: hidden;
+    margin-top: -40px;
+}
+
+.du{
+    width: 100px;
+    min-height: 100px;
+    overflow-x: hidden;
+} 
+
+.de{
+    width: 100px;
+    min-height: 100px;
+    overflow-x: hidden;
+}
+
+.ha{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin-top: 150px;
+    left:140px;
+}
+
+.inbooox3{
+    /* サイズ指定 */
+    padding: 15px 160px; /* 内側の余白設定 */
+    border-radius: 12px; /* 要素の角を丸くする */
+    width: auto;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.628);
+    color: rgb(0, 0, 0); /* 文字色 */
+    text-decoration: none; /* aタグの下線を非表示に */
+    /* 要素の中身の位置指定 */
+    text-align: center;
+    /* 縦の文字幅 */
+    font-size: 20px; /* フォントサイズ */
+    line-height: 40px;
+    border: 2px solid #000000; /* 境界線を実線で指定 */
+    margin-bottom: 20px;
+    margin-left: 280px;
+}
+
+/*  -------------------???---------------------*/
+.pro{/* gametopのプロフィールボタンの位置 */
+    /* サイズ指定 */
+    padding: 15px 25px; /* 内側の余白設定 */
+    border-radius: 12px; /* 要素の角を丸くする */
+    background-color: rgba(255, 255, 255, 0.5); /* 背景色指定 */
+    border: 2px solid rgb(255, 255, 255); /* 境界線を実線で指定 */
+    text-decoration: none; /* aタグの下線を非表示に */
+    color: black; /* 文字色 */
+    font-size: 15px; /* フォントサイズ */
+    width: 100px; /* aタグの下線を非表示に */
+    /* 要素の中身の位置指定 */
+    text-align: center;
+    /* 縦の文字幅 */
+    line-height: 15px;
+    margin-bottom: 20px;
+    position: absolute; 
+    top: 10px; 
+    left: 850px;
+    border: 2px solid #000000; /* 境界線を実線で指定 */
+    background-image: url(../images/gametopのプロフィール.png);
+}
+
+.konbu{/* 掲示板の作成ボタン */
+    padding: 10px 10px; /* 内側の余白設定 */
+    border-radius: 12px; /* 要素の角を丸くする */
+    background-color: rgba(237, 82, 82, 0.854); /* 背景色指定 */
+    border: 2px solid red; /* 境界線を実線で指定 */
+    text-decoration: none; /* aタグの下線を非表示に */
+    color: #fff; /* 文字色 */
+    /* 要素の中身の位置指定 */
+    font-size: 15px;
+    margin-top: 310px;
+    position: absolute;
+    left:800px;
+}
+.keizi{/*掲示板のリスト？*/
+    text-align: left;
+    margin-top: 20px;
+    margin-left: 300px;
+    margin-bottom: 20px;
+}
+.hakodayo{
+    margin-top: 200px;
+}
+.sen{
+   margin-left: 300px;
+}
+.takasi{
+    font-size: 20px;
+    position: absolute;
+    margin-top: 280px;
+    margin-left: 310px;
+}
+
+.gazo{
+    width: 60%;
+    height: 60%;
+    margin-left: 260px;
+    margin-top: 30px;
+}
+
+.right-game{/* 正解選ぶとこの 文字%*/
+    font-size: 20px;
+    margin-top: 40px;
+    position: absolute;
+    left:400px;
+}
+
+.f_game{
+    /* サイズ指定 */
+    padding: 15px 50px; /* 内側の余白設定 */
+    border-radius: 12px; /* 要素の角を丸くする */
+    width: auto;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.628);
+    color: rgb(0, 0, 0); /* 文字色 */
+    text-decoration: none; /* aタグの下線を非表示に */
+    border: dashed 1px #000000;
+    /* 要素の中身の位置指定 */
+    text-align: center;
+    /* 縦の文字幅 */
+    font-size: 20px; /* フォントサイズ */
+    line-height: 20px;
+    margin-bottom: 15px;
+    top: -60px;
+    margin-left: 40px;
+}
+.nanaka{/* gameの解答ボタン */
+    /* サイズ指定 */
+    padding: 10px 10px; /* 内側の余白設定 */
+    border-radius: 12px; /* 要素の角を丸くする */
+    background-color: rgba(255, 0, 0, 0.5); /* 背景色指定 */
+    border: 2px solid red; /* 境界線を実線で指定 */
+    text-decoration: none; /* aタグの下線を非表示に */
+    color: #fff; /* 文字色 */
+    /* 要素の中身の位置指定 */
+    text-align: center;
+    width: 150px;
+    /* 縦の文字幅 */
+    font-size: 20px; /* フォントサイズ */
+    line-height: 15px;
+    margin-bottom: 20px;
+    position: absolute;
+    margin-top: -10px;
+    left:400px;
+}
+
+.bakemono{/* GAME終わりボタン */
+    padding: 10px 20px; /* 内側の余白設定 */
+    border-radius: 12px; /* 要素の角を丸くする */
+    background-color: rgba(0, 0, 0, 0.5); /* 背景色指定 */
+    border: 2px solid black; /* 境界線を実線で指定 */
+    text-decoration: none; /* aタグの下線を非表示に */
+    color: #fff; /* 文字色 */
+    font-size: 15px; /* フォントサイズ */
+    width: 150px;
+    position: absolute;/* こっから位置指定できるやつ */
+    margin-top: -450px;
+    left:20px;
+}
+
+.score{
+    font-size: 20px;
+    position: absolute;/* こっから位置指定できるやつ */
+    margin-top: 250px;
+    left:730px;
+}
+
+.Bbule2 {
+    padding: 5px 20px; /* 内側の余白設定 */
+    border-radius: 12px; /* 要素の角を丸くする */
+    background-color: rgba(0, 47, 255, 0.5); /* 背景色指定 */
+    border: 2px solid blue; /* 境界線を実線で指定 */
+    text-decoration: none; /* aタグの下線を非表示に */
+    color: #fff; /* 文字色 */
+    font-size: 20px; /* フォントサイズ */
+    width: 80px;
+    height: auto;
+    position: absolute;/* こっから位置指定できるやつ */
+    margin-top: 400px;
+    left:900px;
+}
+
+.mini_inbooox{
+    /* サイズ指定 */
+    padding: 15px 160px; /* 内側の余白設定 */
+    border-radius: 12px; /* 要素の角を丸くする */
+    width: auto;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.628);
+    color: rgb(0, 0, 0); /* 文字色 */
+    text-decoration: none; /* aタグの下線を非表示に */
+    /* 要素の中身の位置指定 */
+    text-align: center;
+    /* 縦の文字幅 */
+    font-size: 20px; /* フォントサイズ */
+    line-height: 40px;
+    border: 2px solid #000000; /* 境界線を実線で指定 */
+    position: absolute;
+    margin-top: 220px;
+    margin-bottom: 20px;
+    margin-left: 400px;
+}
+
+.mini_Bbule {
+    padding: 5px 20px; /* 内側の余白設定 */
+    border-radius: 12px; /* 要素の角を丸くする */
+    background-color: rgba(0, 47, 255, 0.5); /* 背景色指定 */
+    border: 2px solid blue; /* 境界線を実線で指定 */
+    text-decoration: none; /* aタグの下線を非表示に */
+    color: #fff; /* 文字色 */
+    font-size: 30px; /* フォントサイズ */
+    width: 100px;
+    height: auto;
+    text-align: center;
+    position: absolute;
+    margin-top: 340px;
+    margin-left: 557px;
+}
+
+.minisukoa{/* 点数の位置 */
+    font-size: 40px;
+    position: absolute;
+    margin-top: 150px;
+    margin-left: 700px;
+}
+
+.mainsukoa{/* メインの解答の位置 */
+    font-size: 40px;
+    position: absolute;
+    margin-top: 200px;
+    margin-left: 700px;
+}
+
+.bakemono2{/* GAME終わりボタン2 */
+    padding: 10px 20px; /* 内側の余白設定 */
+    border-radius: 12px; /* 要素の角を丸くする */
+    background-color: rgba(0, 0, 0, 0.5); /* 背景色指定 */
+    border: 2px solid black; /* 境界線を実線で指定 */
+    text-decoration: none; /* aタグの下線を非表示に */
+    color: #fff; /* 文字色 */
+    font-size: 15px; /* フォントサイズ */
+    width: 150px;
+    position: absolute;/* こっから位置指定できるやつ */
+    margin-top: -5px;
+    left:20px;
+}
+
+.tugi{/* gameの次へボタン */
+    /* サイズ指定 */
+    padding: 10px 10px; /* 内側の余白設定 */
+    border-radius: 12px; /* 要素の角を丸くする */
+    background-color: rgba(255, 0, 0, 0.5); /* 背景色指定 */
+    border: 2px solid red; /* 境界線を実線で指定 */
+    text-decoration: none; /* aタグの下線を非表示に */
+    color: #fff; /* 文字色 */
+    /* 要素の中身の位置指定 */
+    text-align: center;
+    width: 150px;
+    /* 縦の文字幅 */
+    font-size: 20px; /* フォントサイズ */
+    line-height: 15px;
+    margin-bottom: 20px;
+    position: absolute;
+    margin-top: 370px;
+    left:800px;
+}
+
+.inbooox3{
+    /* サイズ指定 */
+    padding: 15px 100px; /* 内側の余白設定 */
+    border-radius: 12px; /* 要素の角を丸くする */
+    width: auto;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.628);
+    color: rgb(0, 0, 0); /* 文字色 */
+    text-decoration: none; /* aタグの下線を非表示に */
+    /* 要素の中身の位置指定 */
+    text-align: center;
+    /* 縦の文字幅 */
+    font-size: 20px; /* フォントサイズ */
+    line-height: 70px;
+    border: 2px solid #000000; /* 境界線を実線で指定 */
+    margin-left: 380px;
+}
+
+.inboxtop{
+    /* サイズ指定 */
+    padding: 25px 140px; /* 内側の余白設定 */
+    border-radius: 12px; /* 要素の角を丸くする */
+    width: auto;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.628);
+    color: rgb(0, 0, 0); /* 文字色 */
+    text-decoration: none; /* aタグの下線を非表示に */
+    /* 要素の中身の位置指定 */
+    text-align: center;
+    /* 縦の文字幅 */
+    font-size: 20px; /* フォントサイズ */
+    border: 2px solid #000000; /* 境界線を実線で指定 */
+    margin-top: 20px;
+    margin-left: 280px;
+}
+
+.heart{
+    position: absolute;
+    text-align: right;
+    font-size: 30px;
+    margin-top: -50px;
+    margin-left: -150px;
+}
+
+.heart_n{
+    color: #ff0000;
+    font-size: 70px;
+}

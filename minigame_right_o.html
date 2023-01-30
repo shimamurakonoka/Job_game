@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../static/css/style.css">
+    <title>正解</title>
+    </head>
+    
+<body class="right_o">
+    <p class="tagu"> {{ user_id }} </p>
+
+    <input type="hidden" name="id" value="{{id}}">
+
+    <p>{{ ox }}</p>
+
+    <form action="{{ url_for('main_quiz') }}">
+        <input  class="Bred" type="submit" value="次へ">
+    </form>
+
+    <form action="{{ url_for('minigame_ok') }}" method="post">
+        <input  class="bakemono" type="submit" value="ゲームを終わる">
+    </form>
+
+    <style>
+        .Bred{ margin-left: 85%;}
+    </style>
+</body>
+</html>

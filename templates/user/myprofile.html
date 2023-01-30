@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../static/css/style.css">
+    <title>プロフィール</title>
+    </head>
+    
+<body class="user">
+    <div class="c_whitebox">
+    
+    <h1 style="text-align: center">MY profile</h1>​
+    <p class="wa">ID: {{ result[0]["id"] }} </p>
+    <p class="haa">パスワード: ●●●●●●● </p>
+    <p class="han">スコア: {{ result[0]["score"] }}</p>
+    <p class="level">経験値: {{ result[0]["blessing2"] }}</p>
+
+    <a class="tii" href="{{ url_for('profile_edit_page') }}">編集</a>
+    <a class="na" href="{{ url_for('gametop') }}">戻る</a>​
+    </div>
+
+    <style>
+        h1{ margin-bottom: 50px; margin-top: 5%;}
+        p{margin-bottom: 20px; text-align: left}
+        .Bred{ margin-left: 90%;}
+        .Bbule{ margin-right: 25%;}
+        .level{  font-size: 20px;
+        margin-top: 200px;
+        position: absolute;
+        left:350px;}
+        .hen{
+            padding: 10px 20px; /* 内側の余白設定 */
+        border-radius: 12px; /* 要素の角を丸くする */
+        background-color: rgba(255, 0, 0, 0.5); /* 背景色指定 */
+        border: 2px solid red; /* 境界線を実線で指定 */
+        text-decoration: none; /* aタグの下線を非表示に */
+        color: #fff; /* 文字色 */
+        /* 要素の中身の位置指定 */
+        text-align: center;
+        width: 100px;
+        /* 縦の文字幅 */
+        font-size: 20px; /* フォントサイズ */
+        position: absolute;
+        bottom:50px;
+        left:460px;
+        }
+    </style>
+
+</body>
+</html>

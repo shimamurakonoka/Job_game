@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+ <head>
+   <meta charset="UTF-8">
+   <link rel="stylesheet" href="../../static/css/style.css">
+   <title>スレッド削除依頼</title>
+ </head>
+ <body class="user">
+  <div class="c_whitebox">
+  <h1 class="fo">削除依頼</h1>
+  {% for res in threads %}
+    <form action="{{url_for('u_board_thrdelete_b')}}" method="post">
+      <input type="hidden" name="thread_id" value="{{ thread_id }}">
+      <div class="hakodayo">
+        <p class="roxy2">スレッドの名前:{{ res.thread_name }}</p>
+        <p class="roxy3">ユーザーの名前:{{ res.user_id }}</p>
+      </div>
+      <p class="mamakoko">理由<input type="text" name="reason_2"></p><br>
+    <input type="submit" value="送信" class="my">
+  {% endfor %}
+    </form>
+​
+    <a class="pa" href="{{ url_for('thread_page') }}">戻る</a>
+  </div>
+ </body>
+ </html>

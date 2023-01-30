@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../static/css/style.css">
+    <title>ランキング</title>
+    </head>
+    
+<body class="user">
+    <div class="c_whitebox"></div>
+    <h1 class="ba">ミニゲーム&emsp;スコアランキング</h1>
+    <img src="../../static/images/ranking.png" class="da">
+    <div class="ha">
+        <div class="flex2">
+        <p><img src="../../static/images/rank1.png" class="di"></p>
+        <p class="socre_user" style="margin-top: 10%; display:flex;  font-size: 120%;">{{score[0]["id"]}} {{score[0]["score"]}}</p>
+        </div>
+        
+        <div class="flex">
+        <p><img src="../../static/images/rank2.png" class="du"></p>
+        <p class="socre_user" style="margin-top: 30%; display: inline; font-size: 120%;">{{score[1]["id"]}} {{score[1]["score"]}}</p>
+        </div>
+        
+        <div class="flex">
+        <p><img src="../../static/images/rank3.png" class="de"></p>
+        <p class="socre_user" style="margin-top: 30%; display: inline; font-size: 120%;">{{score[2]["id"]}} {{score[2]["score"]}}</p>
+        </div>
+    </div>
+    <a class="na" a href="{{ url_for('findworktop') }}">戻る</a>
+    <style>
+    .flex{
+        display: flex;
+        justify-content: space-between;
+    }
+    .flex2{
+        display: flex;
+        justify-content: space-between;
+        box-sizing: border-box;
+    }
+    .flex>p{
+        width: 49%;
+    }
+    </style>
+</body>
+</html>

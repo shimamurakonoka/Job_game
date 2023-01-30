@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+ <head>
+   <meta charset="UTF-8">
+   <link rel="stylesheet" href="../../static/css/style.css">
+   <title>掲示板</title>
+ </head>
+ <body class="keijiban">
+   <h1 class="fa">掲示板</h1>
+   <br>
+    <br>
+   <p class="aomori">※警告※人が不快になる書き込みはしないようにしよう！</p>
+   {% if ok != "" %}
+   <p style="color: rgb(43, 0, 255);">{{ok}}</p>
+   {% endif %}
+   
+    <div class="hakodayo">
+    {% for res in thread %}
+​
+    <p class="keizi">{{ res.thread_name }} {{ res.user_id }}</p>
+​
+    <form action="{{url_for('board_page')}}" method="post">
+      <input type="submit" value="このスレッドを見る"  class="waku">
+      <input type="hidden" name="thread_id" value="{{ res.thread_id }}">
+    </form>
+​
+    <form action="{{url_for('u_board_thrdelete_page')}}" method="post">
+      <input type="submit" value="削除依頼" class="sakujyo">
+      <input type="hidden" name="thread_id" value="{{ res.thread_id }}">
+    </form>
+​
+    <p class="sen">-----------------------------------------------------------------------------------------</p>
+​
+    {% endfor %}
+​
+    <form action="{{ url_for('thread') }}" method="get">
+      <p class="takasi">スレッドを立てる</p>
+      <p class="ra">スレッド名<input type="text" name="thread_name" size="50"  class="textbox"></p>
+      <input type="submit" value="作成" class="konbu">
+    </form>
+​
+    <a class="goki" href="{{ url_for('gametop') }}">戻る</a>
+  </div>
+   
+ </body>
+ </html>

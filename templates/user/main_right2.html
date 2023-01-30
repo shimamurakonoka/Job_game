@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../static/css/style.css">
+    <title>ミニゲーム</title>
+    </head>
+    
+<body class="right">
+    <p class="tagu"> {{ user_id }} </p>
+
+    <input type="hidden" name="id" value="{{id}}">
+    <div class="mainsukoa">
+    <p>{{ ox }}</p>
+    </div>
+    <form action="{{ url_for('main_quiz2') }}">
+        <input  class="tugi" type="submit" value="次へ">
+    </form>
+
+    <style>
+        .Bred{ margin-left: 85%;}
+    </style>
+</body>
+</html>

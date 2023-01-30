@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+ <head>
+   <meta charset="UTF-8">
+   <link rel="stylesheet" href="../../static/css/style.css">
+   <title>スレッド管理</title>
+ </head>
+ <body>
+  <div class="sureddo">
+   <h2>スレッド管理</h2>
+   {% if ok != "" %}
+   <p style="color: rgb(43, 0, 255);">{{ok}}</p>
+   {% endif %}
+    {% for res in thread %}
+      <p>依頼ID：{{res.delete_thread_id}}</p>
+      <p>スレッドID：{{ res.thread_id }}</p>
+      <p>スレッド名：{{ res.thread_name }}</p>
+      <p>投稿者：{{ res.user_id }}</p>
+      <p>理由：{{ res.reason_2 }}</p>
+      <form action="{{url_for('thread_edit_page_del')}}" method="post">
+        <input type="hidden" name="delete_thread_id" value="{{ res.delete_thread_id }}">
+        <input type="hidden" name="thread_id" value="{{ res.thread_id }}">
+        <input type="submit" value="スレッド削除" class="suredel">
+        <p>----------------------------------------------------------</p>
+      </form>
+    {% endfor %}
+  </div>
+    <a class="goki" a href="{{ url_for('adtop') }}">戻る</a>
+    <style>h2{font-size: 30px;}</style>
+ </body>
+ </html>
+
+
+
+
+
+
+
+
+
+
+

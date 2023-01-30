@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../../static/css/style.css">
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+  <title>チュートリアル</title>
+</head>
+<body class="stage">
+    <div id="display">
+        <p id = "name"></p>
+        <p id = "message"></p>       
+    </div>
+    {% if s_flag == 0 %}
+    <a href="{{ url_for('gametop') }}" class="Bpink">gametopへ</a>
+    <script>
+        $(function () {
+            const messages = [
+                {name:"ウサギ",message:"はじめまして！　ぼくはウサギ。"},
+                {name:"あなた",message:"はじめまして。"},
+                {name:"ウサギ",message:"あなたの就職活動のお手伝いをするよ！"},
+                {name:"あなた",message:"よろしくお願いします！"},
+                {name:"ウサギ",message:"頑張ろうね！"},
+                {name:"あなた",message:"はーい　（”gametopへ”をクリック）"},
+            ]
+            let count = 0;     //何番目のメッセージを表示するかのカウント用の変数
+            let finished = true //動作中かどうかを管理するフラグ
+            //メッセージウィンドウがクリックされた時
+            $('#display').on('click', function () {
+                //メッセージの最後が表示されていたら無効化
+                if (messages.length > count) { 
+                    if (finished) {
+                        finished = false
+                        $('#name').text(messages[count].name)
+                        $('#message').text('')
+                        let messagesplit = messages[count].message.split('')
+                        console.log(messagesplit)
+                        let i = 0;
+                        let Intervalobj = setInterval(() => {
+                            if (messagesplit[i] == undefined) {
+                                clearInterval(Intervalobj)
+                                finished = true
+                                return false
+                            }
+                            $('#message').append(messagesplit[i])
+                            i++
+                        }, 50)
+                        count++
+       
+                        
+                    }
+                }
+            })
+        })
+
+    </script>
+    {% endif %}
+
+
+    {% if s_flag == 2%}
+        <a href="{{ url_for('main_quiz') }}" class="Bpink">ステージへ</a>
+        <script>
+            $(function () {
+                const messages = [
+                    {name:"ウサギ",message:"はじめまして！　ぼくは1番目のウサギ。"},
+                    {name:"あなた",message:"はじめまして。"},
+                    {name:"ウサギ",message:"あなたの就職活動のお手伝いをするよ！"},
+                    {name:"あなた",message:"よろしくお願いします！"},
+                    {name:"ウサギ",message:"頑張ろうね！"},
+                    {name:"あなた",message:"はーい　（”ステージへ”をクリック）"},
+                ]
+                let count = 0;     //何番目のメッセージを表示するかのカウント用の変数
+                let finished = true //動作中かどうかを管理するフラグ
+                //メッセージウィンドウがクリックされた時
+                $('#display').on('click', function () {
+                    //メッセージの最後が表示されていたら無効化
+                    if (messages.length > count) { 
+                        if (finished) {
+                            finished = false
+                            $('#name').text(messages[count].name)
+                            $('#message').text('')
+                            let messagesplit = messages[count].message.split('')
+                            console.log(messagesplit)
+                            let i = 0;
+                            let Intervalobj = setInterval(() => {
+                                if (messagesplit[i] == undefined) {
+                                    clearInterval(Intervalobj)
+                                    finished = true
+                                    return false
+                                }
+                                $('#message').append(messagesplit[i])
+                                i++
+                            }, 50)
+                            count++
+           
+                            
+                        }
+                    }
+                })
+            })
+    
+        </script>
+        {% endif %}    
+
+    {% if s_flag == 5 %}
+        <a href="{{ url_for('main_quiz5') }}" class="Bpink">ステージへ</a>
+        <script>
+            $(function () {
+                const messages = [
+                    {name:"ウサギ",message:"はじめまして！　ぼくは5番目のウサギ。"},
+                    {name:"あなた",message:"はじめまして。"},
+                    {name:"ウサギ",message:"あなたの就職活動のお手伝いをするよ！"},
+                    {name:"あなた",message:"よろしくお願いします！"},
+                    {name:"ウサギ",message:"頑張ろうね！"},
+                    {name:"あなた",message:"はーい　（”STAGEへ”をクリック）"},
+                ]
+                let count = 0;     //何番目のメッセージを表示するかのカウント用の変数
+                let finished = true //動作中かどうかを管理するフラグ
+                //メッセージウィンドウがクリックされた時
+                $('#display').on('click', function () {
+                    //メッセージの最後が表示されていたら無効化
+                    if (messages.length > count) { 
+                        if (finished) {
+                            finished = false
+                            $('#name').text(messages[count].name)
+                            $('#message').text('')
+                            let messagesplit = messages[count].message.split('')
+                            console.log(messagesplit)
+                            let i = 0;
+                            let Intervalobj = setInterval(() => {
+                                if (messagesplit[i] == undefined) {
+                                    clearInterval(Intervalobj)
+                                    finished = true
+                                    return false
+                                }
+                                $('#message').append(messagesplit[i])
+                                i++
+                            }, 50)
+                            count++
+           
+                            
+                        }
+                    }
+                })
+            })
+    
+        </script>
+        {% endif %}
+        {% if s_flag == 9 %}
+        <a href="{{ url_for('main_game10') }}" class="Bpink">ステージへ</a>
+        <script>
+            $(function () {
+                const messages = [
+                    {name:"ウサギ",message:"はじめまして！　ぼくはラスボス直前のウサギ。"},
+                    {name:"あなた",message:"はじめまして。"},
+                    {name:"ウサギ",message:"あなたの就職活動のお手伝いをするよ！"},
+                    {name:"あなた",message:"よろしくお願いします！"},
+                    {name:"ウサギ",message:"頑張ろうね！"},
+                    {name:"あなた",message:"はーい　（”GAMETOPへ”をクリック）"},
+                ]
+                let count = 0;     //何番目のメッセージを表示するかのカウント用の変数
+                let finished = true //動作中かどうかを管理するフラグ
+                //メッセージウィンドウがクリックされた時
+                $('#display').on('click', function () {
+                    //メッセージの最後が表示されていたら無効化
+                    if (messages.length > count) { 
+                        if (finished) {
+                            finished = false
+                            $('#name').text(messages[count].name)
+                            $('#message').text('')
+                            let messagesplit = messages[count].message.split('')
+                            console.log(messagesplit)
+                            let i = 0;
+                            let Intervalobj = setInterval(() => {
+                                if (messagesplit[i] == undefined) {
+                                    clearInterval(Intervalobj)
+                                    finished = true
+                                    return false
+                                }
+                                $('#message').append(messagesplit[i])
+                                i++
+                            }, 50)
+                            count++
+           
+                            
+                        }
+                    }
+                })
+            })
+    
+        </script>
+        {% endif %}    
+        {% if s_flag == 10 %}
+        <a href="{{ url_for('main_map') }}" class="Bpink">ステージへ</a>
+        <script>
+            $(function () {
+                const messages = [
+                    {name:"ウサギ",message:"はじめまして！　ぼくは10番目のウサギ。"},
+                    {name:"あなた",message:"はじめまして。"},
+                    {name:"ウサギ",message:"あなたの就職活動のお手伝いをするよ！"},
+                    {name:"あなた",message:"よろしくお願いします！"},
+                    {name:"ウサギ",message:"頑張ろうね！"},
+                    {name:"あなた",message:"はーい　（”GAMETOPへ”をクリック）"},
+                ]
+                let count = 0;     //何番目のメッセージを表示するかのカウント用の変数
+                let finished = true //動作中かどうかを管理するフラグ
+                //メッセージウィンドウがクリックされた時
+                $('#display').on('click', function () {
+                    //メッセージの最後が表示されていたら無効化
+                    if (messages.length > count) { 
+                        if (finished) {
+                            finished = false
+                            $('#name').text(messages[count].name)
+                            $('#message').text('')
+                            let messagesplit = messages[count].message.split('')
+                            console.log(messagesplit)
+                            let i = 0;
+                            let Intervalobj = setInterval(() => {
+                                if (messagesplit[i] == undefined) {
+                                    clearInterval(Intervalobj)
+                                    finished = true
+                                    return false
+                                }
+                                $('#message').append(messagesplit[i])
+                                i++
+                            }, 50)
+                            count++
+           
+                            
+                        }
+                    }
+                })
+            })
+    
+        </script>
+        {% endif %}    
+
+        
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../static/css/style.css">
+    <title>ミニゲーム結果</title>
+    </head>
+    
+<body class="minikekka">
+
+        <input type="hidden" name="now_s" value="{{now_s}}">
+
+        <div class="score">
+            <p>{{user}} {{now_s}}点</p>
+        </div>
+        
+
+        <a class="Bbule2" href="{{ url_for('findworktop') }}" >終了する</a>
+    <style>
+        h1{ text-align: left; margin-top: 5%;}
+        p{ font-size: 200%; margin-top: 5%; white-space:nowrap;}
+        .Bbule{ margin-right: 80%; margin-top: 30%; }
+    </style>
+</body>
+</html>
